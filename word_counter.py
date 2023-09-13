@@ -2,14 +2,14 @@ print("Create a program that takes a paragraph of text as input and counts the f
 
 def count_word_frequency(text):
     #split text into words!
-    words = text.split()
+    words = [word.strip(".,!;:|/?\"'()[]{}").lower() for word in text.split()]
 
     #create an empty dictionary for words:
     word_frequency = {}
 
     #starting with for loop:
     for word in words:
-        word = word.strip(".,!;:|/?\"'()[]{}").lower()
+        
         
 
         #now using if statement:
