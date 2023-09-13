@@ -9,8 +9,8 @@ def count_word_frequency(text):
 
     #starting with for loop:
     for word in words:
-        word = word.strip(".,!;:|/?\"'()[]{}")
-        word = word.lower()
+        word = word.strip(".,!;:|/?\"'()[]{}").lower()
+        
 
         #now using if statement:
         if word in word_frequency:
