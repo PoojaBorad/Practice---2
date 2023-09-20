@@ -20,6 +20,10 @@ def guess_number():
             continue
 
         attempts += 1
-          
+
+        if guess < 1 or guess > max_number:
+            print("Your guess is not valid. Try again.".format(max_number))
+            
+
         
 
