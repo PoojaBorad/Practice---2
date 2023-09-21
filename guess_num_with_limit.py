@@ -22,8 +22,19 @@ def guess_number():
         attempts += 1
 
         if guess < 1 or guess > max_number:
-            print("Your guess is not valid. Try again.".format(max_number))
-            
+            print("Your guess is not valid (1 - {}). Try again.".format(max_number))
+        elif guess > secret_number:
+            print("your guess is high! Try again.")
+        elif guess < secret_number:
+            print("Your guess is low! Try again.")  
+        else: 
+            print("Congratulations! You guessed the number {} in {} attempts.".format(secret_number, attempts))      
+            break
+
+    if attempts >= max_attempts:
+        print("Sorry, you've run out of attempts. The secret number was {}.".format(secret_number))
+
+guess_number()       
 
         
 
