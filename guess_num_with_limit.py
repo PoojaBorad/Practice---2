@@ -12,6 +12,7 @@ def guess_number():
     #print(f"You have to guess the number between 1 to {max_number}!")
     
     #max_attempts = int(input("Enter the number of attempts you want: "))
+    
     #Attempts are fixed.
     max_attempts = 15
     print(f"You will get {max_attempts} attempts to guess the correct nuber.")
@@ -27,6 +28,7 @@ def guess_number():
             continue
 
         attempts += 1
+
 #Using f string insted of (.format) function.
         if guess < 1 or guess > max_number:
             print(f"Your guess is not valid (1 - {max_number}). Try again.")
