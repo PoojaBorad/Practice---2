@@ -6,10 +6,10 @@ def guess_number():
     print("Welcome to the Game of the 'GUESS THE NUMBER'!")
     print("I will choose a random number, and you have to guess it.")
 
-    #max_number = int(input("Enter the maximum you want to guess: "))
+    max_number = int(input("Enter the maximum you want to guess: "))
     #Maximum nuber is already fixed.
-    max_number = 100
-    print(f"You have to guess the number between 1 to {max_number}!")
+    #max_number = 100
+    #print(f"You have to guess the number between 1 to {max_number}!")
     
     #max_attempts = int(input("Enter the number of attempts you want: "))
     #Attempts are fixed.
