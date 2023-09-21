@@ -10,7 +10,11 @@ def guess_number():
     #Maximum nuber is already fixed.
     max_number = 100
     print(f"You have to guess the number between 1 to {max_number}!")
-    max_attempts = int(input("Enter the number of attempts you want: "))
+    
+    #max_attempts = int(input("Enter the number of attempts you want: "))
+    #Attempts are fixed.
+    max_attempts = 15
+    print(f"You will get {max_attempts} attempts to guess the correct nuber.")
 
     secret_number = random.randint(1, max_number)
     attempts = 0
