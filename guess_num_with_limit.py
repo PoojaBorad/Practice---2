@@ -14,25 +14,25 @@ def guess_number():
 
     while attempts < max_attempts:
         try:
-            guess = int (input("Enter your guess number between 1 to {}: ".format(max_number)))
+            guess = int (input(f"Enter your guess number between 1 to {max_number}:"))
         except ValueError:
             print("Invalid Number. Please try again.")  
             continue
 
         attempts += 1
-
+#Using f string insted of (.format) function.
         if guess < 1 or guess > max_number:
-            print("Your guess is not valid (1 - {}). Try again.".format(max_number))
+            print(f"Your guess is not valid (1 - {max_number}). Try again.")
         elif guess > secret_number:
             print("your guess is high! Try again.")
         elif guess < secret_number:
             print("Your guess is low! Try again.")  
         else: 
-            print("Congratulations! You guessed the number {} in {} attempts.".format(secret_number, attempts))      
+            print(f"Congratulations! You guessed the number {secret_number} in {attempts} attempts.")      
             break
 
     if attempts >= max_attempts:
-        print("Sorry, you've run out of attempts. The secret number was {}.".format(secret_number))
+        print(f"Sorry, you've run out of attempts. The secret number was {secret_number}.")
 
 guess_number()       
 
