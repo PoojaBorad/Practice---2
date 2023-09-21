@@ -14,7 +14,7 @@ def guess_number():
 
     while attempts < max_attempts:
         try:
-            guess = int (input("Enter your guess number: ".format(max_number)))
+            guess = int (input("Enter your guess number between 1 to {}: ".format(max_number)))
         except ValueError:
             print("Invalid Number. Please try again.")  
             continue
